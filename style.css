@@ -1,0 +1,25 @@
+button{
+    width: 100px;
+    height: 100px;
+}
+.text{
+    width: 300px;
+    height: 100px;
+    font-size: large;
+}
+table{
+    background-color: aqua;
+}
+.but{
+    background-color: red;
+    color: white;
+    font-size: large;
+}
+.calci{
+    font-size: larger;
+    color: white;
+   
+}
+.calci td{
+    text-align: center;
+}
