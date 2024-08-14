@@ -4,43 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <table style="display: flex; align-items: center; justify-content: center; width: 445px; height: 570px; position: relative; left: 440px; top: 50px;">
-        <tr class="calci">
-            <td class="head">Calculator</td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <input type="txt" class="text" placeholder="Result">
-            </td>
-            <td><button type="button" class="but">C</button></td>
-        </tr>
-        <tr>
-            <td><button type="button">1</button></td>
-            <td><button type="button">2</button></td>
-            <td><button type="button">3</button></td>
-            <td><button type="button">+</button></td>
-        </tr>
-        <tr>
-            <td><button type="button">4</button></td>
-            <td><button type="button">5</button></td>
-            <td><button type="button">6</button></td>
-            <td><button type="button">-</button></td>
-        </tr>
-        <tr>
-            <td><button type="button">7</button></td>
-            <td><button type="button">8</button></td>
-            <td><button type="button">9</button></td>
-            <td><button type="button">*</button></td>
-        </tr>
-        <tr>
-            <td><button type="button">/</button></td>
-            <td><button type="button">0</button></td>
-            <td><button type="button">.</button></td>
-            <td><button type="button">=</button></td>
-        </tr>
-    </table>
+    <div class="calculator">
+        <p class="screen"><span class="result" id="res">22+235</span></p>
+        <div class="buttons">
+            <p class="grey" onclick="clr()">AC</p>
+            <p class="grey" onclick="">=></p>
+            <p class="grey" onclick="cal('%')">%</p>
+            <p class="yellow" onclick="cal('/')">/</p>
+            <p onclick="cal('7')">7</p>
+            <p onclick="cal('8')">8</p>
+            <p onclick="cal('9')">9</p>
+            <p onclick="cal('*')" class="yellow">X</p>
+            <p onclick="cal('4')">4</p>
+            <p onclick="cal('5')">5</p>
+            <p onclick="cal('6')">6</p>
+            <p onclick="cal('-')" class="yellow">-</p>
+            <p onclick="cal('1')">1</p>
+            <p onclick="cal('2')">2</p>
+            <p onclick="cal('3')">3</p>
+            <p onclick="cal('+')" class="yellow">+</p>
+            <p onclick="cal('0')">0</p>
+            <p onclick="cal('00')">00</p>
+            <p onclick="cal('.')">.</p>
+            <p onclick="solve()" class="yellow">=</p>
+        </div>
+    </div>
 </body>
 </html>
