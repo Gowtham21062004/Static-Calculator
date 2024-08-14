@@ -1,25 +1,66 @@
-button{
-    width: 100px;
-    height: 100px;
+*{
+    padding: 0;
+    margin: 0;
 }
-.text{
-    width: 300px;
-    height: 100px;
-    font-size: large;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-table{
-    background-color: aqua;
+
+.calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 500px;
+    width: 320px;
+    border: 1px solid rgb(24, 2, 2);
+    border-radius: 10px;
+    background-color: rgb(173, 230, 167);
 }
-.but{
-    background-color: red;
+
+.screen{
+    height: 125px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.result{
+    font-size: 50px;
+    color: rgb(11, 5, 5);
+    float: right;
+    margin: 50px 25px 0 0;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.buttons p{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(16, 83, 216);
     color: white;
-    font-size: large;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.calci{
-    font-size: larger;
+
+.buttons .yellow{
+    background-color: rgb(21, 235, 142);
     color: white;
-   
 }
-.calci td{
-    text-align: center;
+
+.buttons .grey{
+    background-color: rgb(148, 143, 143);
+    color: black;
 }
